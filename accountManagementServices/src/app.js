@@ -25,6 +25,7 @@ const updateUserDetails = require('../routes/userServicesRoutes/updateUserDetail
 const updateUserPassword = require('../routes/userServicesRoutes/updateUserPassword');
 const updateUserRole = require('../routes/userServicesRoutes/updateUserRole');
 const deactivateUser = require('../routes/userServicesRoutes/deativateUserService');
+const deleteUser = require('../routes/userServicesRoutes/deleteUser');
 
 app.use(`${usersApi}/createUser`, createUser);
 app.use(`${usersApi}/verify`, verifyAccount);
@@ -34,6 +35,7 @@ app.use(`${usersApi}/updateUserDetails`, updateUserDetails);
 app.use(`${usersApi}/updateUserPassword`, updateUserPassword);
 app.use(`${usersApi}/updateUserRole`, updateUserRole);
 app.use(`${usersApi}/deactivateUser`, deactivateUser);
+app.use(`${usersApi}/deleteUser`, deleteUser);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
