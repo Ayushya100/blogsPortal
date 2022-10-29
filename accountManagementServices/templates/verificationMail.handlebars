@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify your Account</title>
+
+    <style>
+        .message {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .info {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .from-reg {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 2px;
+        }
+        .from {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>    
+    <div class="message">We got a request for a new account creation with this emailId. Please verify your emailId to activate the account.</div>
+    <div class="info">Please click on the following link to proceed.</div>
+    <a href="{{ verificationCode }}">Verify</a>
+    
+    <div class="from-reg">Regards</div>
+    <div class="from">Shadow Works</div>
+</body>
+</html>
