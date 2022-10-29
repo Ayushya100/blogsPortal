@@ -18,7 +18,9 @@ const tagsApi = '/api/v1/tags';
 const collectionsApi = '/api/v1/collections';
 
 // Routes
+const createBlogs = require('../routes/blogsRoutes/createBlog');
 
+app.use(`${blogsApi}/createBlogs`, createBlogs);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
