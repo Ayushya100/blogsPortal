@@ -29,6 +29,7 @@ const deleteUser = require('../routes/userServicesRoutes/deleteUser');
 const loginUser = require('../routes/userServicesRoutes/loginUser');
 const addBlogsToUser = require('../routes/userServicesRoutes/addBlogsToUserService');
 const removeBlogsFromUser = require('../routes/userServicesRoutes/removeBlogsFromUserService');
+const createPrivilege = require('../routes/privilegeServicesRoutes/createPrivilege');
 
 app.use(`${usersApi}/createUser`, createUser);
 app.use(`${usersApi}/verify`, verifyAccount);
@@ -42,6 +43,7 @@ app.use(`${usersApi}/deleteUser`, deleteUser);
 app.use(`${usersApi}/loginUser`, loginUser);
 app.use(`${usersApi}/addBlogsToUser`, addBlogsToUser);
 app.use(`${usersApi}/removeBlogsFromUser`, removeBlogsFromUser);
+app.use(`${privilegesApi}/createPrivilege`, createPrivilege);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
