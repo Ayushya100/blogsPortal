@@ -31,6 +31,7 @@ const addBlogsToUser = require('../routes/userServicesRoutes/addBlogsToUserServi
 const removeBlogsFromUser = require('../routes/userServicesRoutes/removeBlogsFromUserService');
 const createPrivilege = require('../routes/privilegeServicesRoutes/createPrivilege');
 const getAllPrivileges = require('../routes/privilegeServicesRoutes/getAllPrivileges');
+const getActivePrivileges = require('../routes/privilegeServicesRoutes/getActivePrivilegesService');
 
 app.use(`${usersApi}/createUser`, createUser);
 app.use(`${usersApi}/verify`, verifyAccount);
@@ -46,6 +47,7 @@ app.use(`${usersApi}/addBlogsToUser`, addBlogsToUser);
 app.use(`${usersApi}/removeBlogsFromUser`, removeBlogsFromUser);
 app.use(`${privilegesApi}/createPrivilege`, createPrivilege);
 app.use(`${privilegesApi}/getAllPrivileges`, getAllPrivileges);
+app.use(`${privilegesApi}/getActivePrivileges`, getActivePrivileges);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
