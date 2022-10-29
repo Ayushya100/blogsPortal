@@ -23,6 +23,7 @@ const getAllUsersInfo = require('../routes/userServicesRoutes/getAllUsersInfo');
 const getUserDetails = require('../routes/userServicesRoutes/getUserDetails');
 const updateUserDetails = require('../routes/userServicesRoutes/updateUserDetails');
 const updateUserPassword = require('../routes/userServicesRoutes/updateUserPassword');
+const updateUserRole = require('../routes/userServicesRoutes/updateUserRole');
 
 app.use(`${usersApi}/createUser`, createUser);
 app.use(`${usersApi}/verify`, verifyAccount);
@@ -30,6 +31,7 @@ app.use(`${usersApi}/getAllUsersInfo`, getAllUsersInfo);
 app.use(`${usersApi}/getUserDetails`, getUserDetails);
 app.use(`${usersApi}/updateUserDetails`, updateUserDetails);
 app.use(`${usersApi}/updateUserPassword`, updateUserPassword);
+app.use(`${usersApi}/updateUserRole`, updateUserRole);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
