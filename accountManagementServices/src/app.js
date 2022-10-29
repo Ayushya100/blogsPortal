@@ -19,9 +19,11 @@ const privilegesApi = '/api/v1/privileges';
 // Routes
 const createUser = require('../routes/userServicesRoutes/createUser');
 const verifyAccount = require('../routes/userServicesRoutes/verifyAccount');
+const getAllUsersInfo = require('../routes/userServicesRoutes/getAllUsersInfo');
 
 app.use(`${usersApi}/createUser`, createUser);
 app.use(`${usersApi}/verify`, verifyAccount);
+app.use(`${usersApi}/getAllUsersInfo`, getAllUsersInfo);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
