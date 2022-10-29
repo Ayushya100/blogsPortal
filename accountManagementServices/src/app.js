@@ -21,11 +21,13 @@ const createUser = require('../routes/userServicesRoutes/createUser');
 const verifyAccount = require('../routes/userServicesRoutes/verifyAccount');
 const getAllUsersInfo = require('../routes/userServicesRoutes/getAllUsersInfo');
 const getUserDetails = require('../routes/userServicesRoutes/getUserDetails');
+const updateUserDetails = require('../routes/userServicesRoutes/updateUserDetails');
 
 app.use(`${usersApi}/createUser`, createUser);
 app.use(`${usersApi}/verify`, verifyAccount);
 app.use(`${usersApi}/getAllUsersInfo`, getAllUsersInfo);
 app.use(`${usersApi}/getUserDetails`, getUserDetails);
+app.use(`${usersApi}/updateUserDetails`, updateUserDetails);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
