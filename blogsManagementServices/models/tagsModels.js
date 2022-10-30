@@ -5,6 +5,7 @@ const tagsSchema = new mongoose.Schema({
     tagName: {
         type: String,
         required: true,
+        unique: true,
         trime: true
     },
     isValidated: {
