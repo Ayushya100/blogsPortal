@@ -1,9 +1,8 @@
 const express = require('express');
-const userInfo = require('../../models/userInfoModels');
 const router = express.Router();
 
 // Adding Models
-const User = require('../../models/userInfoModels');
+const userInfo = require('../../models/userInfoModels');
 const infoToDisplay = 'firstName lastName phoneNo emailId bio userName role profileImg blogsCount blogsList createdAt lastLogin isVerified';
 
 router.get('/', async(req, res) => {
