@@ -3,7 +3,7 @@ const router = express.Router();
 
 // Adding Models
 const Blogs = require('../../models/blogsModels');
-const infoToDisplay = 'title img overview content version views tags createdAt updatedAt authorId';
+const infoToDisplay = 'title img overview version views tags createdAt updatedAt authorId';
 
 router.put('/:id', async(req, res) => {
     try {
