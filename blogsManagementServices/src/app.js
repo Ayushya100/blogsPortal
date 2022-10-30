@@ -30,6 +30,7 @@ const getActiveTags = require('../routes/tagsRoutes/getActiveTags');
 const deleteTags = require('../routes/tagsRoutes/deleteTag');
 const activateTags = require('../routes/tagsRoutes/activateTag');
 const deactivateTags = require('../routes/tagsRoutes/deactivateTag');
+const createCollections = require('../routes/collectionsRoutes/createCollection');
 
 app.use(`${blogsApi}/createBlogs`, createBlogs);
 app.use(`${blogsApi}/getAllBlogs`, getAllBlogs);
@@ -43,6 +44,7 @@ app.use(`${tagsApi}/getActiveTags`, getActiveTags);
 app.use(`${tagsApi}/deleteTags`, deleteTags);
 app.use(`${tagsApi}/activateTags`, activateTags);
 app.use(`${tagsApi}/deactivateTags`, deactivateTags);
+app.use(`${collectionsApi}/createCollections`, createCollections);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
