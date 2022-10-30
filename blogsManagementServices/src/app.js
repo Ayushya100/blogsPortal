@@ -26,6 +26,7 @@ const deleteBlogs = require('../routes/blogsRoutes/deleteBlog');
 const updateBlogViews = require('../routes/blogsRoutes/updateBlogViews');
 const createTags = require('../routes/tagsRoutes/createTag');
 const getAllTags = require('../routes/tagsRoutes/getAllTags');
+const getActiveTags = require('../routes/tagsRoutes/getActiveTags');
 
 app.use(`${blogsApi}/createBlogs`, createBlogs);
 app.use(`${blogsApi}/getAllBlogs`, getAllBlogs);
@@ -35,6 +36,7 @@ app.use(`${blogsApi}/deleteBlogs`, deleteBlogs);
 app.use(`${blogsApi}/updateBlogViews`, updateBlogViews);
 app.use(`${tagsApi}/createTags`, createTags);
 app.use(`${tagsApi}/getAllTags`, getAllTags);
+app.use(`${tagsApi}/getActiveTags`, getActiveTags);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
