@@ -1,0 +1,37 @@
+.main-container {
+    position: relative;
+    text-align: left;
+    color: whitesmoke;
+}
+
+.main-container .content-left {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    max-width: 1000px;
+}
+.main-container .content-left .logo {
+    margin-bottom: 50px;
+}
+.main-container .content-left .text {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.main-container .content-left .btn {
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 60px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main-container .content-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.main-container .content-right p {
+    color: #FFD700;
+}
