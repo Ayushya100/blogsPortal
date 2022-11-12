@@ -1,0 +1,14 @@
+.page-container {
+    position: relative;
+    text-align: center;
+}
+
+.page-container .btn {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 100px;
+    font-weight: 500;
+}

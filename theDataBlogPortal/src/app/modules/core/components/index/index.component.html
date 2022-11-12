@@ -1,1 +1,20 @@
-<p>index works!</p>
+<div class="main-container">
+    <img src="assets/img/bg.jpg" alt="background" [style.height.px]="innerHeight" [style.width.px]="innerWidth">
+    <div class="content-left">
+        <img src="assets/img/TheDataBlog.png" alt="logo" class="logo">
+        <p class="row-1 text">
+            We've got some amazing contents for you, feel free to check them out. We hope our blogs
+            will be helpful to you.
+        </p>
+        <p class="row-2 text">
+            We need amazing writers like you to provide amazing contents to our users. Please join us
+            on this journed and become a member of our team dedicated to providing useful and knowledgable contents
+            for our users.
+        </p>
+        <button class="btn btn-outline-success" [routerLink]="['/home']">Read</button>
+        <button class="btn btn-outline-primary" [routerLink]="['/login']">Create</button>
+    </div>
+    <div class="content-right">
+        <p>Note: No charges applied</p>
+    </div>
+</div>
