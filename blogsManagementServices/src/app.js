@@ -37,6 +37,8 @@ const updateCollections = require('../routes/collectionsRoutes/updateCollection'
 const addToCollections = require('../routes/collectionsRoutes/addToCollection');
 const deleteFromCollections = require('../routes/collectionsRoutes/deleteFromCollection');
 const deleteCollections = require('../routes/collectionsRoutes/deleteCollection');
+const increaseBlogLikes = require('../routes/blogsRoutes/increaseBlogLikes');
+const decreaseBlogLikes = require('../routes/blogsRoutes/decreaseBlogLikes');
 
 app.use(`${blogsApi}/createBlogs`, createBlogs);
 app.use(`${blogsApi}/getAllBlogs`, getAllBlogs);
@@ -57,6 +59,8 @@ app.use(`${collectionsApi}/updateCollections`, updateCollections);
 app.use(`${collectionsApi}/addToCollections`, addToCollections);
 app.use(`${collectionsApi}/deleteFromCollections`, deleteFromCollections);
 app.use(`${collectionsApi}/deleteCollections`, deleteCollections);
+app.use(`${blogsApi}/increaseBlogLikes`, increaseBlogLikes);
+app.use(`${blogsApi}/decreaseBlogLikes`, decreaseBlogLikes);
 
 app.listen(port, () => {
     console.log(`Connection has been started at port: ${port}`);
